@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery WeUI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="./css/weui.min.css">
+    <link rel="stylesheet" href="./css/jquery-weui.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <script src="./js/font.js"></script> -->
+</head>
+
+<body ontouchstart>
+    <header class='demos-header'>
+        <span>
+            <a href="javascript:;"></a></span> <span>大米先生
+        </span>
+    </header>
+    <!-- 页面展示内容部分 -->
+    <div class="top-panel">
+        <img src="./img/lunbo.jpg" alt="">
+        <img src="./img/logo.jpg" alt="">
+        <div class="index-ccm5A">
+            <div class="index-3X8sl"><span class="mini-tag-1Lyw4 index-25J0x">品牌<span class="index-mZyhi mini-tag-1ezSQ">品牌</span></span><img
+                    class="index-3eDRn" src=""></div>
+            <!---->
+            <div class="index-2uv7r">
+                <h2 class="index-3jRsK"><span class="index-UYhnL">大米先生(阳光新业店)</span><i class="index-1_VRD"></i></h2>
+                <div class="index-24KTi"><span class="index-2u0xV">评价4.7</span><span class="index-2u0xV">月售3563单</span><span
+                        class="index-2u0xV">蜂鸟专送<span>约31分钟</span></span></div>
+            </div>
+            <!---->
+            <div class="apprance-details">
+                <div class="seiler">
+                    <div class="activity-1hPHa activity-2JHFT"><span class="mini-tag-1Lyw4 activity-N5WvH" style="background-color: rgb(240, 115, 115);">满减<span
+                                class="activity-yP-9y mini-tag-1ezSQ">满减</span></span><span class="activity-3dUjU">满15减5，满30减15，满50减25</span></div>
+                </div>
+                <div class="apprance">3个优惠</div>
+            </div>
+            <p class="notice">公告： 大米先生正在营业，餐厅承接大型团膳，菜品丰富，如有需要，欢迎致电：13981931707</p>
+        </div>
+    </div>
+    <!-- <div class="weui-panel__hd">图文组合列表</div> -->
+
+    <div class="weubar">
+        <div>
+            <div>
+                <p class="shop-tab-kinds titleactive" lang='tab1'>
+                    商家推荐
+                    <span class="shop-tab-border" style="background-color: rgb(35, 149, 255);"></span>
+                </p>
+            </div>
+            <!-- <div>
+                <p class="shop-tab-kinds" lang = 'tab2'>
+                    评价
+                    <span class="shop-tab-border" style="background-color: rgb(35, 149, 255);"></span>
+                </p>
+            </div>
+            <div>
+                <p class="shop-tab-kinds" lang = 'tab3'>
+                    商家
+                    <span class="shop-tab-border" style="background-color: rgb(35, 149, 255);"></span>
+                </p>
+            </div> -->
+        </div>
+    </div>
+    <!-- <div class="shop-recommend tab1">
+        <div>
+            <p>商家推荐</p>
+            <div>
+                <div class="recommend-box">
+                    <img src="./img/hong.jpg" alt="">
+                    <div>
+                        <p class="food-card-title">红烧肉+小炒肉套饭</p>
+                        <p class="food-card-apprance">
+                            月售228
+                            好评率93%
+                        </p>
+                        <div class="food-sail">
+                            <p class="food-card-wVKdM" style="color: rgb(255, 83, 57);"><small>¥</small>22
+                            </p><span>
+                                <span class="cartbutton-entitybutton_9fUdS cartbutton-soldout_1FtF3">已售完</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <img src="./img/hong.jpg" alt="">
+                    <div>
+                        <p class="food-card-title">红烧肉+小炒肉套饭</p>
+                        <p class="food-card-apprance">
+                            月售228
+                            好评率93%
+                        </p>
+                        <div class="food-sail">
+                            <p class="food-card-wVKdM" style="color: rgb(255, 83, 57);"><small>¥</small>22
+                            </p><span>
+                                <span class="cartbutton-entitybutton_9fUdS cartbutton-soldout_1FtF3">已售完</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="tabview">
+        <div class="weui-tab__bd">
+            <div class="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                <main>
+                    <div class="menulist">
+                        <ul id="menulist">
+                            <a href="#buy">
+                                <li role="button" aria-label="buy" class="meun-active texRigt menuFont">
+                                    <img class="menuimg" src="">
+                                    <span class="meuntitle">买过</span></li>
+                            </a>
+                            <a href='#one'>
+                                <li role="button" aria-label="one" class="texRigt menuFont">
+                                    <img class="menuimg" src="">
+                                    <span class="meuntitle">热销</span></li>
+                            </a>
+                            <a href='#two'>
+                                <li role="button" aria-label="two" class="texRigt menuFont">
+                                    <img class="menuimg" src="">
+                                    <span class="meuntitle">优惠</span></li>
+                            </a>
+                            <a href='#three'>
+                                <li role="button" aria-label="three" class="menuFont">
+                                    <!---->
+                                    <span class="meuntitle">小吃饮品</span></li>
+                            </a>
+                        </ul>
+                    </div>
+                    <section>
+                        <div class="foot-list">
+                            <dl name='buy'>
+                                <dt>
+                                    <div>
+                                        <strong>买过的</strong>
+                                        <span>大家喜欢吃，才真的好吃</span>
+                                    </div>
+                                </dt>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span class="priceSingle">￥2</span>
+                                            </div>
+                                            <div>
+                                                <span class="reduce">-</span>
+                                                <span class="Num">2</span>
+                                                <span class="addFood">+</span>
+                                            </div>
+                                            <div class="singleTotal"></div>
+                                        </section>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>黄焖鸡</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span class="priceSingle">￥14</span>
+                                            </div>
+                                            <div>
+                                                <span class="reduce">-</span>
+                                                <span class="Num">1</span>
+                                                <span class="addFood">+</span>
+                                            </div>
+                                            <div class="singleTotal"></div>
+                                        </section>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span>￥2</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span>￥2</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl name='one'>
+                                <dt>
+                                    <div>
+                                        <strong>热销</strong>
+                                        <span>大家喜欢吃，才真的好吃</span>
+                                    </div>
+                                </dt>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span>￥2</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl name='two'>
+                                <dt>
+                                    <div>
+                                        <strong>优惠</strong>
+                                        <span>大家喜欢吃，才真的好吃</span>
+                                    </div>
+                                </dt>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span class="priceSingle">￥2</span>
+                                            </div>
+                                            <div>
+                                                <span class="reduce">-</span>
+                                                <span class="Num">2</span>
+                                                <span class="addFood">+</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span class="priceSingle">￥12</span>
+                                            </div>
+                                            <div>
+                                                <span class="reduce">-</span>
+                                                <span class="Num">2</span>
+                                                <span class="addFood">+</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span class="priceSingle">￥12</span>
+                                            </div>
+                                            <div>
+                                                <span class="reduce">-</span>
+                                                <span class="Num">2</span>
+                                                <span class="addFood">+</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span class="priceSingle">￥12</span>
+                                            </div>
+                                            <div>
+                                                <span class="reduce">-</span>
+                                                <span class="Num">2</span>
+                                                <span class="addFood">+</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span class="priceSingle">￥12</span>
+                                            </div>
+                                            <div>
+                                                <span class="reduce">-</span>
+                                                <span class="Num">2</span>
+                                                <span class="addFood">+</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span class="priceSingle">￥12</span>
+                                            </div>
+                                            <div>
+                                                <span class="reduce">-</span>
+                                                <span class="Num">2</span>
+                                                <span class="addFood">+</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span class="priceSingle">￥12</span>
+                                            </div>
+                                            <div>
+                                                <span class="reduce">-</span>
+                                                <span class="Num">2</span>
+                                                <span class="addFood">+</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span class="priceSingle">￥12</span>
+                                            </div>
+                                            <div>
+                                                <span class="reduce">-</span>
+                                                <span class="Num">2</span>
+                                                <span class="addFood">+</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl name='three'>
+                                <dt>
+                                    <div>
+                                        <strong>小吃饮品</strong>
+                                        <span>大家喜欢吃，才真的好吃</span>
+                                    </div>
+                                </dt>
+                                <dd>
+                                    <div>
+                                        <span><img src="./img//hong.jpg" alt=""></span>
+                                        <section>
+                                            <p>泰皇米饭</p>
+                                            <p>月售3619份 好评率98%</p>
+                                            <div>
+                                                <span>￥2</span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </section>
+                </main>
+
+            </div>
+            <div class="tab2" class="weui-tab__bd-item">
+                <h1>页面二</h1>
+                <div style="height:600px;width: 100%">333333333</div>
+                <h1>页面二</h1>
+            </div>
+            <div class="tab3" class="weui-tab__bd-item">
+                <h1>页面三</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    <footer>
+        <div class="favourable">
+            <span> 满15减5元，满30减15元，满50减25元</span>
+        </div>
+        <div class="shoppingCart">
+            <span class="shoppingimg">
+                <span>
+                    <span class="count">14</span>
+                </span>
+            </span>
+            <span>
+                <p class="totalprice">未选购商品</p>
+                <p><span>另需配送费1元</span></p>
+            </span>
+            <span class="pay ">￥15元起送</span>
+        </div>
+    </footer>
+
+    <div class="mask"></div>
+    <div class="modialog">
+        <ul>
+            <li>急急急夹江的角度讲</li>
+        </ul>
+    </div>
+
+
+    <script src="./js/jquery-2.1.4.js"></script>
+    <script src="./js/fastclick.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        $(function () {
+            FastClick.attach(document.body);
+        });
+    </script>
+    <script src="./js/jquery-weui.min.js"></script>
+
+    <script>
+        // $(document).on("click", "#show-actions", function () {
+
+        //     $.actions({
+        //         title: "选择操作",
+        //         onClose: function () {
+        //             console.log("close");
+        //         },
+        //         actions: [{
+        //                 text: "发布aaaaaaaaaaaaaaaaadsadddddddddddddddddddddddd",
+        //                 className: "color-primary",
+        //                 onClick: function () {
+        //                     $.alert("发布成功");
+        //                 }
+        //             },
+        //             {
+        //                 text: "编辑",
+        //                 className: "color-warning",
+        //                 onClick: function () {
+        //                     $.alert("你选择了“编辑”");
+        //                 }
+        //             },
+        //             {
+        //                 text: "删除",
+        //                 className: 'color-danger',
+        //                 onClick: function () {
+        //                     $.alert("你选择了“删除”");
+        //                 }
+        //             }
+        //         ]
+        //     });
+        // });
+
+        // $(document).on("click", "#show-actions-bg", function () {
+        //     $.actions({
+        //         actions: [{
+        //                 text: "发布",
+        //                 className: "bg-primary",
+        //             },
+        //             {
+        //                 text: "编辑",
+        //                 className: "bg-warning",
+        //             },
+        //             {
+        //                 text: "删除",
+        //                 className: 'bg-danger',
+        //             }
+        //         ]
+        //     });
+        // });
+        $(function () {
+            // height: calc(100% - 111px);
+            document.getElementsByClassName('tabview')[0].style.height = (window.screen.availHeight - 111) +
+                'px';
+            // console.log()
+        })
+
+        $(".weubar a").click(function (e) {
+            console.dir(this.hash)
+        })
+    </script>
+</body>
+
+</html>
